@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export const CurrentUser = () => {
-    
+
     const [data, setData] = useState<any>(null)
     const [loading, setLoading] = useState(true)
 
@@ -13,8 +13,10 @@ export const CurrentUser = () => {
                 headers: {
                     "Content-Type": "application/json",
                     Authorization: `Bearer ${token}`
-                }
-            })
+                },
+            },
+
+            )
             const json = await res.json()
             setData(json)
         } finally {

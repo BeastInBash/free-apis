@@ -5,13 +5,14 @@ import { RandomUser } from './pages/RandomUser'
 import { RandomCats } from './pages/RandomCats'
 import { QuotesListing } from './pages/QuotesListing'
 import { ProductListing } from './pages/ProductListing'
-import { MealsListing } from './pages/MealsListing'
 import { JokesViewer } from './pages/JokesViewer'
 import Navbar from './components/Navbar'
 import { Toaster } from 'react-hot-toast'
 import LoginForm from './components/Authenticate/SignIn/Form'
 import ProtectedRoute from './components/ProtectedRoute'
 import { CurrentUser } from './components/Authenticate/Me/CurrentUser'
+import MealsGrid from './pages/MealsListing'
+import MealDetail from './pages/MealDetail'
 
 function App() {
     return (
@@ -41,7 +42,15 @@ function App() {
                     path="/meals"
                     element={
                         <ProtectedRoute>
-                            <MealsListing />
+                            <MealsGrid />
+                        </ProtectedRoute>
+                    }
+                />
+                <Route
+                    path='/meals/:id'
+                    element={
+                        <ProtectedRoute>
+                            <MealDetail />
                         </ProtectedRoute>
                     }
                 />
