@@ -13,6 +13,7 @@ export default function MealDetail() {
     const navigate = useNavigate();
     const location = useLocation();
     const { id } = useParams<{ id: string }>();
+    console.log(id)
     const [checkedIngredients, setCheckedIngredients] = useState<Set<number>>(new Set());
     const [completedSteps, setCompletedSteps] = useState<Set<number>>(new Set());
 

@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback } from "react"
-import { useNavigate } from "react-router-dom"
+// import { useNavigate } from "react-router-dom"
 
 interface IPData {
     id: number
@@ -185,7 +185,7 @@ const SkeletonCard = () => (
 )
 
 export const ProductListing = () => {
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
     const [product, setProducts] = useState<IPData[]>([])
     const [loading, setLoading] = useState<boolean>(true)
     const [error, setError] = useState<string | null>(null)
