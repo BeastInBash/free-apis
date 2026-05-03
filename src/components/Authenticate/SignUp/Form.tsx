@@ -77,8 +77,9 @@ export default function Form() {
                 toast.error(result.message || "Something went wrong");
             }
             return;
+
         }
-        console.log(result)
+        toast.success("Registration Successful")
     }
     return (
         <div className="min-h-screen bg-neutral-950 flex items-center justify-center px-4">

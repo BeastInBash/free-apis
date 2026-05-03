@@ -1,3 +1,3 @@
-export const RandomCats = ()=> {
+export const RandomCats = () => {
     return <>Cats</>
 }

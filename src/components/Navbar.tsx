@@ -40,20 +40,20 @@ export default function Navbar() {
             {/* User Section */}
             {user ? (
                 <>
-                    <div  className="flex items-center gap-2 pl-4 border-l border-gray-700">
+                    <div className="flex items-center gap-2 pl-4 border-l border-gray-700">
                         <img
                             src={user.avatar?.url}
                             alt="avatar"
                             className="w-9 h-9 rounded-full object-cover ring-2 ring-violet-500"
-                            onClick={() =>  navigate('/me')}
+                            onClick={() => navigate('/me')}
                         />
                         <div className="flex flex-col">
                             <span className="text-sm font-medium text-white">{user.username}</span>
                             <span className="text-xs text-gray-400">{user.role}</span>
                         </div>
-                        <button 
-                        onClick={() => logout()}
-                        className='text-white ml-8 border border-neutral-500 px-2 py-1 rounded-md outline-none hover:bg-neutral-950'>Logout</button>
+                        <button
+                            onClick={() => logout()}
+                            className='text-white ml-8 border border-neutral-500 px-2 py-1 rounded-md outline-none hover:bg-neutral-950'>Logout</button>
                     </div>
                 </>
             ) : (

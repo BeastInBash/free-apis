@@ -1,5 +1,5 @@
 export const RandomUser = () => {
-return (
-    <>RandomUser</>
-)
+    return (
+        <>RandomUser</>
+    )
 }

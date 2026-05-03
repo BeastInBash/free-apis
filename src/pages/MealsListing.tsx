@@ -1,6 +1,6 @@
 
 export const MealsListing = () => {
     return <>
-   Meals 
+        Meals
     </>
 }

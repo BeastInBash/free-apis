@@ -3,7 +3,7 @@ import { AuthenticationList } from "../components/Authenticate/AuthenticationLis
 export const Authentication = () => {
     return (
         <div>
-        <AuthenticationList/>
+            <AuthenticationList />
         </div>
     )
 }
